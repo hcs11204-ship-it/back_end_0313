@@ -16,7 +16,8 @@ import kr.GenAi.web.service.BoardService;
 
 @RestController
 @RequestMapping("/api/board")
-@CrossOrigin(origins = "http://127.0.0.1:5500", allowedHeaders = "*")
+//@CrossOrigin(origins = "http://127.0.0.1:5500", allowedHeaders = "*")를 public서버 비공인 IP로 변경
+@CrossOrigin(origins = "http://10.1.1.6", allowedHeaders = "*")
 public class BoardRestController {
 	
 	@Autowired
